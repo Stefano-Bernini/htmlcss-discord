@@ -11,66 +11,96 @@
 /* HEADER */
 /* header background color and size */
 header{
-    background-color: rgba(173,216,230,1);
-    height: 100px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height: 620px;
 }
-/* width header */
+
 .container_header{
     width: 70%;
     margin: auto;
 }
-/* row header flex attribute */
-.row_header{
+
+.row_top_header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
 }
-/* col 25 & 50 size and color */
-.col_25, .col_50{
-    background-color: rgba(218,165,32,1);
-    height: 50px;
-    border-style: dashed;
-    margin-top: 25px;
-    padding-top: 7px;
-    font-size: 25px;
+
+.logo{
+    width: 120%;
 }
-/* width col_25 */
-.col_25{
-    width: 25%;
+
+.nav{
+    font-size: 17px;
+    margin: 0px 22px;
+    color: white;
 }
-/* width col_50 */
-.col_50{
-    width: 50%;
+
+.login{
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 25px;
+}
+
+.col_titolo_header{
+    margin-top: 45px;
+}
+
+.row_bottom_header{
+    width: 65%;
+    margin: auto;
+}
+
+.main_title, .paragrafo_header{
+    color: white;
+}
+
+.main_title{
+    font-size: 60px;
+}
+
+.main_title, .paragrafo_header{
     text-align: center;
 }
-/* padding logo */
-.logo{
-    padding-left: 10px;
-}
-/* padding and text align login */
-.login{
-    text-align: right;
-    padding-right: 10px;
 
+.paragrafo_header{
+    font-size: 22px;
+}
+
+.col_paragrafo_header{
+    margin-top: 50px;
+}
+
+.col_button_bottom_header{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button_bottom_header_left{
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.button_bottom_header_right{
+    color: white;
+    background-color: rgba(35,39,42,1);
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
 }
 
 /* MAIN */
 /* -------SECTION_1-------- */
 /* size, color and flex properties section 1 */
-.section_1{
-    height: 600px;
-    background-color: darkblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* size, color and border container */
-.container_section_1{
-    width: 60%;
-    height: 450px;
-    background-color: hotpink;
-    border-style: dashed;
-}
+
 
 /* -------SECTION_2-------- */
 /* size and flex properties section */
