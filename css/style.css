@@ -111,6 +111,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 300px;
 }
 /* size container */
 .container_section_1{
@@ -145,12 +146,26 @@ header{
 /* -------SECTION_2-------- */
 /* size, color and flex properties section */
 .section_2{
-    /* position: relative; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../img/wave.svg); */
-    margin-top: 300px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+ .section_2::before{
+    background-image: url(../img/wave.svg);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-position: 50% 0;
 }
 /* size container */
 .container_section_2{
@@ -176,6 +191,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 300px;
+    margin-bottom: 300px;
 }
 /* size container */
 .container_section_3{
@@ -197,11 +213,25 @@ header{
 /* -------SECTION_4-------- */
 /* size, color and flex properties section 1 */
 .section_4{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
-    margin-bottom: 250px;
+    padding-top: 120px;
+    padding-bottom: 250px;
+}
+
+.section_4::before{
+    background-image: url(../img/wave.svg);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-position: 50% 0;
 }
 /* size, color and border container */
 .container_section_4{
@@ -244,7 +274,7 @@ header{
     justify-content: center;
 }
 
-.button_bottom_footer{
+.button_bottom_main{
     font-size: 20px;
     padding: 15px;
     border: none;
@@ -260,69 +290,87 @@ footer{
 /* -------SECTION_1-------- */
 /* size, color and flex properties section 1 */
 .section_footer_1{
-    height: 800px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: rgba(35,39,42,1);
-    margin-bottom: 2.5px;
 }
 /* size container */
 .container_section_footer_1{
     width: 70%;
     height: 750px;
     padding-top: 20px;
+    border-bottom: 1px solid rgba(142,161,225,1);
 }
 /* size and display:flex row */
 .row_section_footer_1{
     height: 100%;
     display: flex;
-    border-style: dashed;
 }
 /* size, coor and border col */
 .col_section_footer_1{
+    margin-top: 50px;
+    font-size: 40px;
     width: 33.33332%;
-    height: 100%;
-    background-color: rgba(240,128,128,1);
-    border-style: dashed;
+}
+
+.col_section_footer_1 span{
+    color: white;
+    font-size: 20px;
+}
+
+.logos a{
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.flag_ita{
+    margin-top: 60px;
+    height: 3%;
 }
 /* size, coor and border col */
 .col_section_footer_2{
     width: 16.66666%;
-    height: 100%;
-    background-color: rgba(32,178,170,1);
-    border-style: dashed;
-    border-color: white;
+    margin-top: 50px;
+}
+
+.row_section_footer_1 ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    padding: 15px;
+    font-size: 20px;
 }
 /* size, coor and border col */
 .col_section_footer_3{
     width: 16.66666%;
-    height: 100%;
-    background-color: rgba(32,178,170,1);
-    border-style: dashed;
-    border-color: white;
+    margin-top: 50px;
 }
 /* size, coor and border col */
 .col_section_footer_4{
     width: 16.66666%;
-    height: 100%;
-    background-color: rgba(32,178,170,1);
-    border-style: dashed;
-    border-color: white;
+    margin-top: 50px;
 }
 /* size, color and border col */
 .col_section_footer_5{
     width: 16.66666%;
-    height: 100%;
-    background-color: rgba(32,178,170,1);
-    border-style: dashed;
-    border-color: white;
+    margin-top: 50px;
+}
+
+.footer_title_color{
+    color: rgba(142,161,225,1);
 }
 
 /* -------SECTION_2-------- */
 /* size, color and flex properties section 1 */
 .section_footer_2{
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -331,12 +379,9 @@ footer{
 /* size container */
 .container_section_footer_2{
     width: 70%;
-    height: 150px;
-    background-color: rgba(127,255,212,1);
 }
 /* size and display:flex row */
 .row_section_footer_2{
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -349,17 +394,24 @@ footer{
 }
 /* size, color, position and border col */
 .col_section_bottom_footer_1{
-    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
     width: 100px;
-    background-color: rgba(255,182,193,1);
     align-self: center;
-    border-style: dashed;
 }
 /* size, color, position and border col */
 .col_section_bottom_footer_2{
-    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
     width: 100px;
-    background-color: rgba(255,182,193,1);
     align-self: center;
-    border-style: dashed;
+}
+
+.button_section_2_footer{
+    color: white;
+    background-color: rgba(142,161,225,1);
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
 }
